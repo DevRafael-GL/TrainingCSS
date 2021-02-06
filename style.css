@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 1.8rem;
+  display: flex;
+  padding: 0 12rem 0 12rem;
+  align-items: center;
+  /* background: gray; */
+  justify-content: space-between;
+}
+
+header img {
+  height: 100%;
+  margin-right: 1rem;
+}
+
+header .logo {
+  height: 2.5rem;
+  display: flex;
+}
+
+header .logo h1 {
+  color: #404868;
+  font-family: "Merriweather", serif;
+}
+
+header .logo span {
+  color: #38bcb3;
+}
+
+header .header-menu {
+  background: #f1f2f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* margin-left: 4.8rem; */
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+header .header-menu a {
+  text-align: center;
+  text-decoration: none;
+  color: #4d5473;
+  font-size: 1.7rem;
+  margin: 0 2rem 0 4rem;
+}
+
+header .header-menu a.active {
+  border-bottom: 3px solid #38bcb3;
+}
+
+header .menu-mobile {
+  display: none;
+}
+
+header button {
+  width: 7.4rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #36bbb2;
+}
+
+header button:hover {
+  background: #38bcb3ce;
+}
+
+main {
+  padding: 0 16rem 0 16rem;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+main .left {
+  width: 30rem;
+
+  color: #4d5473;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+}
+
+main .left h1 {
+  font-size: 5rem;
+  line-height: 6.5rem;
+}
+
+main h1 span {
+  width: 10rem;
+  border: 3px solid #36bbb2;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+main .left p {
+  font-size: 1.2rem;
+  font-family: Arial;
+  font-weight: bold;
+  color: #4d5473;
+  line-height: 4rem;
+}
+
+main button {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #36bbb2;
+  margin-right: 3rem;
+}
+
+main button:hover {
+  background: #38bcb3ce;
+}
+
+main button.explore {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: #4d5473;
+  border: 2px solid #4d5473;
+}
+
+main button.explore:hover {
+  background: #c8cacc;
+}
+
+main .right {
+  position: relative;
+}
+
+main .right img {
+  top: -12rem;
+  width: 40rem;
+  left: 16rem;
+  border-radius: 1rem;
+  position: absolute;
+  opacity: 0;
+
+  transition: opacity 1.2s;
+}
+
+.right img.selected {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #f0eeee;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  color: #2b2f3dc2;
+}
